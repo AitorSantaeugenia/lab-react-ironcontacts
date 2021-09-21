@@ -38,13 +38,18 @@
 }
 
 .tableDiv{
-  border:1px solid red;
+  border:2px solid rgb(7, 7, 7);
+  padding:20px;
   width:50%;
   margin:0 auto;
 }
 
 .tableActors{
-  border:1px solid red;
   text-align: center;
   width:100%;
+  margin-top:20px;
+}
+
+.btnIroncontact{
+  margin-left:10px !important;
 }

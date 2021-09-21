@@ -5,6 +5,9 @@ import contacts from './contacts.json';
 //importing useState
 import { useState } from 'react';
 
+//React bootstrap components
+import Button from 'react-bootstrap/Button';
+
 //Function to show only 5 contacts
 const actorsFiveMax = contacts.splice(0, 5); //??? -> not working properly?
 
@@ -65,15 +68,15 @@ function App() {
 			<div className="tableDiv">
 				<h1>IronContacts</h1>
 				<div>
-					<button onClick={addRandomContact} className="btn">
-						Add Random Contact
-					</button>
-					<button onClick={sortByPopularity} className="btn">
+					<Button variant="outline-warning" onClick={addRandomContact} className="btnIroncontact">
+						Add random contact
+					</Button>
+					<Button variant="outline-warning" onClick={sortByPopularity} className="btnIroncontact">
 						Sort by popularity
-					</button>
-					<button onClick={sortByName} className="btn btn-danger">
+					</Button>
+					<Button variant="outline-warning" onClick={sortByName} className="btnIroncontact">
 						Sort by name
-					</button>
+					</Button>
 				</div>
 
 				<table className="tableActors">
@@ -99,15 +102,15 @@ function App() {
 									<td>{actor.wonOscar ? '🏆' : ''}</td>
 									<td>{actor.wonEmmy ? '🏆' : ''}</td>
 									<td>
-										<button
+										<Button
+											variant="outline-danger"
 											onClick={() => {
 												deleteActor(actor.id);
 											}}
-											className="btn btn-danger"
 											id={actor.id}
 										>
-											Delete
-										</button>
+											Remove
+										</Button>
 									</td>
 								</tr>
 							);
