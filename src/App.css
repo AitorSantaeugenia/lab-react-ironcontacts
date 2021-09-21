@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+.tableDiv{
+  border:1px solid red;
+  width:50%;
+  margin:0 auto;
+}
+
+.tableActors{
+  border:1px solid red;
+  text-align: center;
+  width:100%;
+}
