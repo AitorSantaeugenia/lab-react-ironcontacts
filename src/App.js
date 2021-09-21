@@ -23,6 +23,8 @@ function App() {
 								<th> Picture </th>
 								<th> Name </th>
 								<th> Popularity </th>
+								<th> Won Oscar</th>
+								<th> Won Emmy</th>
 							</tr>
 							<tr>
 								<td>
@@ -32,6 +34,8 @@ function App() {
 								<td> {actors.name} </td>
 								{/* Number.toFixed para redondear */}
 								<td> {Number(actors.popularity).toFixed(2)}</td>
+								<td>{actors.wonOscar ? '🏆' : ''}</td>
+								<td>{actors.wonEmmy ? '🏆' : ''}</td>
 							</tr>
 						</table>
 					);
